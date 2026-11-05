@@ -1,3 +1,10 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Cấu hình cho website LEEPAK (05/11/2026). Hai biến này KHÔNG phải bí mật.
+# GITHUB_CLIENT_SECRET là bí mật: chỉ đặt trong Cloudflare (Settings > Variables and Secrets, loại Secret), không ghi vào đây.
+# Khi chuyển tên miền thật, thêm vào ALLOWED_DOMAINS: www.leepakjsc.com, leepakjsc.com
+[vars]
+ALLOWED_DOMAINS = "leepak-website.nguyenkimtuan78.workers.dev"
+GITHUB_CLIENT_ID = "Ov23liAlmZOk7iKLwoJ8"
